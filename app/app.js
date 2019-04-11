@@ -32,6 +32,7 @@ var Model = mongoose.model('plataforma', taskListSchema);
 app.get("/api/plataforma", function (req, res) {
 	Model.find(function(err, todos) {
 		if (err) {
+			// res.json(err);
 			res.json(err);
 		} else {
 			res.json(todos);
