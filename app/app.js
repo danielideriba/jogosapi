@@ -53,7 +53,7 @@ app.get("/api/plataforma-old", function (req, res) {
 });
 
 //GET - Retorna todos os registros existentes no banco
-app.get("/api/plataforma-new", function (req, res) {
+app.get("/api/plataforma-new-new", function (req, res) {
 	Model.find(function(err, todos) {
 		if (err) {
 			// res.json(err);
